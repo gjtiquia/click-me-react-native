@@ -1,7 +1,7 @@
 import ClickMeButton from './components/ClickMeButton';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
-import { GestureResponderEvent, Text, View } from 'react-native';
+import { GestureResponderEvent, Platform, Text, View } from 'react-native';
 import * as NavigationBar from 'expo-navigation-bar';
 
 export default function App() {
@@ -9,6 +9,8 @@ export default function App() {
 
   // Init Android NavBar
   useEffect(() => {
+    if (Platform.OS !== "android") return;
+
     NavigationBar.setBorderColorAsync("transparent");
     NavigationBar.setBackgroundColorAsync("rgb(30,41,59)") // Same as bg-slate-800
   }, []);
