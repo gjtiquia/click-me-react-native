@@ -14,4 +14,4 @@ Start up an Expo development environment with the following command.
 npm run start
 ```
 
-Scan the QR code shown with Expo Go (Android) or the Camera app (iOS) to test the app
+Scan the QR code shown with Expo Go (Android) or the Camera app with Expo Go installed (iOS) to test the app
