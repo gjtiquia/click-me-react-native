@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gjtiquia.ClickMe"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "81d591b9-5d18-4a65-978a-99e75e26441d"
+      }
+    },
+    "owner": "gjtiquia"
   }
 }
